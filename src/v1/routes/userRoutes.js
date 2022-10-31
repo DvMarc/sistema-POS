@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../../controllers/userController');
-const { validateUserCreate } = require("../../validators/userCreatedValidator");
-const { validateUserUpdate } = require("../../validators/userUpdatedValidator");
+const {uploadImage, uploadImageWithUpdate} = require('../../middlewares/upload');
+const { checkAuth } = require("../../middlewares/authMiddleware");
 
 router
-    .get('/', userController.getAllUsers)
+    .get('/', checkAuth,userController.getAllUsers)
 
     .get('/:userId', userController.getUser)
 
-    .post('/', validateUserCreate,userController.createUser)
+    .post('/',uploadImage, userController.createUser)
 
-    .patch('/:userId', validateUserUpdate,userController.updateUser)
+    .patch('/:userId',uploadImageWithUpdate,userController.updateUser)
 
     .delete('/:userId', userController.deleteUser);
     

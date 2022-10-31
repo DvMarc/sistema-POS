@@ -1,12 +1,15 @@
-const User= require('../models/user');
+const User = require('../models/user');
 
-const getAllUsers = async () => { 
-    const users = await User.find({});
+const getAllUsers = async (pageOptions) => { 
+    const users = await User.find()
+        .sort({ username: pageOptions.sort })
+        .skip(pageOptions.page * pageOptions.limit)
+        .limit(pageOptions.limit);
     return users;
 };
 
-const getUser = async (username) => { 
-    const user = await User.findOne({username});
+const getUser = async (userId) => { 
+    const user = await User.findById(userId);
     return user;
 };
 
@@ -17,19 +20,20 @@ const createUser = async (req,res) => {
         password: req.password,
         email: req.email,
         name: req.name,
-        lastName: req.lastName
+        lastName: req.lastName,
+        file: req.file
     });
-    const userCreteated = await user.save();
-    return userCreteated;
+    const userCreated = await user.save();
+    return userCreated;
 };
 
 const updateUser = async (userId, newData) => { 
-    const userUpdate = await User.findOneAndUpdate(userId, newData);
+    const userUpdate = await User.findByIdAndUpdate(userId, newData);
     return userUpdate;
 };
 
 const deleteUser = (userId) => { 
-    const deletedUser = User.deleteOne({"username" : userId})
+    const deletedUser = User.findByIdAndDelete(userId)
     return deletedUser;
 };
 

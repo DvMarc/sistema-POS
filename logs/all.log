@@ -1,0 +1,62 @@
+2022-10-30 14:45:21:4521 http: ::ffff:127.0.0.1 GET /v1/products 200 339 - 171.808 ms
+
+2022-10-30 14:45:22:4522 http: ::ffff:127.0.0.1 GET /v1/products 200 339 - 164.925 ms
+
+2022-10-30 14:45:23:4523 http: ::ffff:127.0.0.1 GET /v1/products 200 339 - 161.591 ms
+
+2022-10-30 14:45:23:4523 http: ::ffff:127.0.0.1 GET /v1/products 200 339 - 164.079 ms
+
+2022-10-30 14:45:23:4523 http: ::ffff:127.0.0.1 GET /v1/products 200 339 - 163.760 ms
+
+2022-10-30 14:45:35:4535 http: ::ffff:127.0.0.1 GET /v1/users 200 408 - 166.352 ms
+
+2022-10-30 14:45:43:4543 http: ::ffff:127.0.0.1 GET /v1/invoices 200 234 - 169.112 ms
+
+2022-10-30 18:21:04:214 http: ::ffff:127.0.0.1 GET /v1/invoices 200 234 - 170.059 ms
+
+2022-10-30 18:21:09:219 http: ::ffff:127.0.0.1 GET /v1/users 409 20 - 0.493 ms
+
+2022-10-30 18:46:51:4651 http: ::ffff:127.0.0.1 POST /v1/auth/register 404 156 - 2.045 ms
+
+2022-10-30 18:48:47:4847 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 22 - 7.520 ms
+
+2022-10-30 18:49:02:492 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 22 - 2.039 ms
+
+2022-10-30 18:49:41:4941 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 43 - 10.459 ms
+
+2022-10-30 18:50:48:5048 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 46 - 7.701 ms
+
+2022-10-30 18:51:36:5136 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 110 - 413.960 ms
+
+2022-10-30 18:51:52:5152 http: ::ffff:127.0.0.1 POST /v1/auth/register 200 267 - 229.378 ms
+
+2022-10-30 18:52:26:5226 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 220.394 ms
+
+2022-10-30 18:52:27:5227 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 221.327 ms
+
+2022-10-30 18:52:27:5227 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 218.653 ms
+
+2022-10-30 18:53:53:5353 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 248.327 ms
+
+2022-10-30 18:53:55:5355 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 223.643 ms
+
+2022-10-30 18:53:55:5355 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 220.610 ms
+
+2022-10-30 18:53:56:5356 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 216.102 ms
+
+2022-10-30 18:53:56:5356 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 222.419 ms
+
+2022-10-30 18:53:57:5357 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 220.523 ms
+
+2022-10-30 18:53:58:5358 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 216.649 ms
+
+2022-10-30 18:53:58:5358 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 223.337 ms
+
+2022-10-30 18:53:58:5358 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 227.802 ms
+
+2022-10-30 18:53:59:5359 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 216.456 ms
+
+2022-10-30 18:53:59:5359 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 217.281 ms
+
+2022-10-30 18:53:59:5359 http: ::ffff:127.0.0.1 POST /v1/auth/register 400 100 - 217.539 ms
+
