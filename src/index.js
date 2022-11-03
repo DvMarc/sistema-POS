@@ -6,7 +6,8 @@ const port = process.env.PORT || 3000
 mongoose.connect(
     process.env.MONGODB_URI
 ).then( () => {
-        app.listen(port,()=>{
+        app.listen(port,(res)=>{
+            app.get('/',(req, res)=>{res.status(200).send(`Server is running on port ${port}`)})
             console.log(`Server is running on port ${port}`);
         });
     }
@@ -14,5 +15,3 @@ mongoose.connect(
         console.log("No se conecto a la base de datos");
     }
 );
-
-
